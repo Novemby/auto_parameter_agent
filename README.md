@@ -1,6 +1,6 @@
 # Auto Parameter Agent
 
-一个用于计算机视觉大作业的自动调参原型。系统会自动尝试 SIFT、SURF、ORB、AKAZE、FAST+BRISK，以及可选的 SuperPoint/SuperGlue 特征匹配算法，通过 RANSAC 筛选内点，并根据匹配数量、内点率、重投影误差、投影框合理性、覆盖度和耗时进行综合评价。
+一个用于计算机视觉自动调参原型。系统会自动尝试 SIFT、SURF、ORB、AKAZE、FAST+BRISK，以及可选的 SuperPoint/SuperGlue 特征匹配算法，通过 RANSAC 筛选内点，并根据匹配数量、内点率、重投影误差、投影框合理性、覆盖度和耗时进行综合评价。
 
 项目核心思想是构建“执行-评价-改进”的闭环 Agent：先生成候选算法和参数，运行匹配代码，再用评价函数打分；如果结果仍有改进空间，就继续围绕高分结果调整参数或调用 LLM Agent 给出策略建议。
 
