@@ -1,0 +1,9 @@
+.env
+config.local.json
+__pycache__/
+*.pyc
+results/
+.idea/
+.video_deps/
+.venv/
+venv/
